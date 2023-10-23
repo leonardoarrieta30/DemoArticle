@@ -15,7 +15,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class OpenApiConfiguration implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry){
-        registry.addMapping("/**").allowedOrigins("http://localhost:4200/").allowedMethods("*").allowedHeaders("*");
+        registry.addMapping("/**").allowedOrigins("https://demoapp-8aec6.web.app/").allowedMethods("*").allowedHeaders("*");
     }
     @Bean
     public OpenAPI customOpenAPi(
