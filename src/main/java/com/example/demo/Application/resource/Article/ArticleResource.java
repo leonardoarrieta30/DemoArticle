@@ -1,0 +1,32 @@
+package com.example.demo.Application.resource.Article;
+
+import com.example.demo.Application.resource.Category.CategoryResource;
+import lombok.*;
+
+
+@Getter
+@Setter
+@With
+@AllArgsConstructor
+@NoArgsConstructor
+public class ArticleResource {
+
+    private Long id;
+
+    private String code;
+
+    private String name;
+
+    private String description;
+
+    private Double price;
+
+    private Integer stock;
+
+    private String photo;
+
+    private Boolean state;
+
+    private CategoryResource category;
+
+}
